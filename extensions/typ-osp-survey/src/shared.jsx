@@ -30,7 +30,7 @@ export function useStorageState(key) {
 
   return [{ data, loading }, setStorage];
 }
-
+// [START order-status.survey-component]
 export function Survey({ title, description, onSubmit, children, loading }) {
   const [submitted, setSubmitted] = useState(false);
   async function handleSubmit() {
@@ -62,3 +62,4 @@ export function Survey({ title, description, onSubmit, children, loading }) {
     </s-box>
   );
 }
+// [END order-status.survey-component]
