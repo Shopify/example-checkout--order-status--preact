@@ -5,7 +5,7 @@ import { Survey, useStorageState } from "./shared.jsx";
 export default function () {
   render(<Attribution />, document.body);
 }
-//START [order-status.attribution-survey]
+// [START order-status.attribution-survey]
 function Attribution() {
   const [attribution, setAttribution] = useState("");
   const [loading, setLoading] = useState(false);
@@ -53,4 +53,4 @@ function Attribution() {
     </Survey>
   );
 }
-//END [order-status.attribution-survey]
+// [END order-status.attribution-survey]

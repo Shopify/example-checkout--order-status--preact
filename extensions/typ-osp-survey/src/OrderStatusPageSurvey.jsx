@@ -5,7 +5,7 @@ import { Survey, useStorageState } from "./shared.jsx";
 export default function () {
   render(<ProductReview />, document.body);
 }
-// START [order-status.product-review]
+// [START order-status.product-review]
 function ProductReview() {
   const [productReview, setProductReview] = useState("");
   const [loading, setLoading] = useState(false);
@@ -54,4 +54,4 @@ function ProductReview() {
     </Survey>
   );
 }
-//END [order-status.product-review]
+// [ENDorder-status.product-review]
