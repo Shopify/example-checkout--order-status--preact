@@ -1,8 +1,3 @@
-# Learn more about configuring your checkout UI extension:
-# https://shopify.dev/api/checkout-extensions/checkout/configuration
-
-# The version of APIs your extension will receive. Learn more:
-# https://shopify.dev/docs/api/usage/versioning
 api_version = "2025-10"
 
 [[extensions]]
@@ -10,11 +5,6 @@ name = "typ-osp-survey"
 handle = "typ-osp-survey"
 type = "ui_extension"
 uid = "4e3e11dc-1fe2-8e29-485c-901abf804ea06596c846"
-
-# Controls where in Shopify your extension will be injected,
-# and the file that contains your extension’s source code. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/extension-targets-overview
-
 # [START order-status.config-extension]
 [[extensions.targeting]]
 module = "./src/ThankYouPageSurvey.jsx"
@@ -24,35 +14,3 @@ target = "purchase.thank-you.block.render"
 module = "./src/OrderStatusPageSurvey.jsx"
 target = "customer-account.order-status.block.render"
 # [END order-status.config-extension]
-
-[extensions.capabilities]
-# Gives your extension access to directly query Shopify’s storefront API.
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#api-access
-api_access = true
-
-# Gives your extension access to make external network calls, using the
-# JavaScript `fetch()` API. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#network-access
-# network_access = true
-
-# Loads metafields on checkout resources, including the cart,
-# products, customers, and more. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#metafields
-
-# [[extensions.metafields]]
-# namespace = "my_namespace"
-# key = "my_key"
-# [[extensions.metafields]]
-# namespace = "my_namespace"
-# key = "my_other_key"
-
-# Defines settings that will be collected from merchants installing
-# your extension. Learn more:
-# https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#settings-definition
-
-# [extensions.settings]
-# [[extensions.settings.fields]]
-# key = "banner_title"
-# type = "single_line_text_field"
-# name = "Banner title"
-# description = "Enter a title for the banner"
